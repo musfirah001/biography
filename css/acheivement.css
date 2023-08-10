@@ -1,0 +1,153 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: #112e42; */
+    padding-bottom: 3rem;
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+span
+{
+    color: #00abf0;
+}
+
+.about-img{
+    position: relative;
+    width: 16rem;
+    height: 15.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #00abf0;
+}
+
+.about-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    border-top: .2rem solid black;
+    border-bottom: .2rem solid black;
+    border-left: .2rem solid  #00abf0;
+    border-right: .2rem solid  #00abf0;
+    animation: aboutSpinner 8s linear infinite;
+}
+
+.about-content{
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/* .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+    text-decoration: none;
+    margin-left: 570px;
+}
+
+.btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 75%;
+    background: #00abf0;
+    border: .2rem solid #00abf0;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #081b29;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1100ff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before{
+width: 100%;
+} */
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.line{
+    color:#00abf0;
+}
+#star{
+    color:white;
+}
+#tim{
+    color:white;
+}
+
+#tim:hover{
+    color:#00abf0;
+}
+#para{
+    color: white;
+    display: contents;
+}
+
+#para:hover{
+    color: #00abf0;
+  
+}
+#img{
+    height: 250px;
+    border-radius: 20px;
+}
+@media(max-width:643px){
+    #achive{
+        font-size: 60px;
+    }
+}
+@media(max-width:512px){
+    #achive{
+        font-size: 40px;
+    }
+}
+
